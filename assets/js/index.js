@@ -20,7 +20,7 @@ function actualizaListado(){
     let html = ""
     for (let tarea of tareas){
         let check = tarea.estado?"checked":""
-        let nombreEstado = tarea.estado?"Cerrado":"Abierto"
+        let nombreEstado = tarea.estado?"Listo":"Abierto"
         html += `
             <tr>
                 <td>${tarea.id}</td>
